@@ -1,0 +1,180 @@
+// Base and fonts Colors
+$black: #000000;
+$lightGray: #8c8f94;
+$white: #ffffff;
+$red: #F2946D;
+$ftTexthover: #b5b5b6;
+$linkColor: #505156;
+
+ //BG Colors
+$topBarBG: #091F3F;
+$servicesBG: #E3EAF3;
+$chooseBodyBG1: #ff4e00;
+$chooseBodyBG2: #0f356c;
+$statBG: #E3EAF3;
+$priceBG: #0F356C;
+ // Border styles
+// Button Colors
+// Background path
+$bgImageUrl: "../images/";
+@function bgImage($bgImg) {
+  @return url($bgImageUrl + $bgImg);
+}
+@function bgColor($color) {
+  @return($color);
+}
+@function textColor($color) {
+  @return($color);
+}
+// Font sizes
+// Font families
+// Font weights
+// Line heights
+// @ Mixin
+@mixin headingsH2 {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'latobold', sans-serif;
+  color: #0f356c;
+  font-size: 49px;
+  line-height: 0.6;
+  letter-spacing: -3px;
+}
+@mixin headingPara {
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'latoregular', sans-serif;
+  color: #ff4e00;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+//Services
+@mixin serviceHeading {
+  color: textColor(#242424);
+  font-family: 'latobold', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  margin-top: 15px;
+}
+@mixin serviceText {
+  color: textColor(#242424);
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'latoregular', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 10px;
+}
+//Buttons
+@mixin whatButton {
+  font-family: 'latomedium', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #0f356c;
+  border-color: #0f356c;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  border-radius: 35px;
+  padding: 20px;
+  margin: 12px auto;
+}
+
+@mixin performanceButton {
+  font-family: 'latomedium', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0f356c;
+  background-color: $white;
+  border-color: $white;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 21%;
+  height: 100%;
+  border-radius: 35px;
+  padding: 20px;
+  margin: 12px auto;
+  text-decoration: none;
+}
+//Choose Us
+@mixin whyChooseHeading {
+  color: textColor($white);
+  font-family: 'latobold', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  margin-top: 15px;
+}
+@mixin whyChooseText {
+  color: textColor($white);
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'latoregular', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 10px;
+  padding: 5px 13px 50px;
+}
+@mixin whyChooseHeadingAfter {
+  border: 3px solid #ffffff;
+    width: 17%;
+    Content: '';
+    display: block;
+    position: relative;
+    margin: 4% auto;
+}
+@mixin whyChooseBody-1 {
+  text-align: center;
+  background-color: $chooseBodyBG1;
+  border-radius: 20px;
+}
+@mixin whyChooseBody-2 {
+  text-align: center;
+  background-color: $chooseBodyBG2;
+  border-radius: 20px;
+}
+// Achievements Starts
+
+@mixin achievementsBodyH4{
+  color: textColor($chooseBodyBG1);
+font-family: 'latobold', sans-serif;
+}
+@mixin achievementsBodyP{
+  color: textColor($chooseBodyBG2);
+  font-family: 'latosemibold', sans-serif;
+  line-height: 0px;
+  font-size: 20px;
+}
+
+//Team Starst
+@mixin TeamBodyH5{
+  font-weight: 400;
+    font-style: normal;
+    font-family: 'latosemibold', sans-serif;
+    color: $chooseBodyBG2;
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    margin-top: 20px;
+}
+@mixin TeamBodyP{
+  font-weight: 400;
+    font-style: normal;
+    font-family: 'latoregular', sans-serif;
+    color: $chooseBodyBG2;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    padding-bottom: 25px;
+}
